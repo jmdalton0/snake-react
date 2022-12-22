@@ -1,0 +1,20 @@
+h1 {
+    font-size: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: var(--desktop-width);
+    margin: 1rem auto;
+}
+
+footer img {
+    height: 4em;
+}
+
+@media (max-width: 768px) {
+    footer {
+        width: var(--mobile-width);
+    }
+}

@@ -1,0 +1,28 @@
+main {
+    width: var(--desktop-width);
+    height: var(--desktop-width);
+    margin: 1rem auto;
+    padding: 4rem;
+    background-color: var(--grey);
+    border: 5px solid var(--grey-light);
+    border-radius: 30px;
+    transition: box-shadow 1s ease;
+}
+
+#console {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    border: 5px solid var(--grey-light);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: var(--mobile-width);
+        height: var(--mobile-width);
+        margin-top: 4rem;
+        padding: 10px;
+    }
+}
