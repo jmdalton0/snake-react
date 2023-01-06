@@ -1,0 +1,25 @@
+.col {
+    display: flex;
+    width: calc(100% / 16);
+    transition: box-shadow 1s ease;
+}
+
+.off {
+    background-color: var(--black);
+}
+
+.teal {
+    background-color: var(--teal);
+}
+
+.teal-dark {
+    background-color: var(--teal-dark);
+}
+
+.pink {
+    background-color: var(--pink);
+}
+
+.food {
+    background-color: var(--orange);
+}

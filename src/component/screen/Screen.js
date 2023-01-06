@@ -4,13 +4,14 @@ import "./Screen.css";
 
 export default function Screen(props) {
     return (
-        <section id={props.id}>
+        <section id={props.type}>
+            {props.children}
             <button
-                id={props.id + "-btn"}
-                className="btn"
+                id={props.type + "-btn"}
+                className="btn screen-btn"
                 onClick={props.action}
             >
-                {props.id}
+                {props.label}
             </button>
         </section>
     );

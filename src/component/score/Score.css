@@ -1,0 +1,16 @@
+h3 {
+    color: var(--teal-dark);
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+#score-count {
+    color: var(--pink);
+    text-shadow: 0 0 24px var(--teal);
+}

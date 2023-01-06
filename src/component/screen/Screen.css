@@ -1,0 +1,21 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0;
+}
+
+.screen-btn {
+    margin-top: 2rem;
+}
+
+#start {
+    justify-content: flex-end;
+    background-image: url('./snake-retro.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

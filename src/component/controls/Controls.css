@@ -1,0 +1,47 @@
+h2 {
+    color: var(--teal);
+}
+
+p {
+    color: var(--teal);
+}
+
+span {
+    margin: 0 1rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control {
+    font-size: 8em;
+}
+
+.key-control {
+    display: inline-block;
+}
+
+.swipe-control {
+    display: none;
+}
+
+.arrow {
+    color: var(--teal-dark);
+}
+
+@media (max-width: 768px) {
+    .control {
+        font-size: 4em;
+    }
+
+    .key-control {
+        display: none;
+    }
+
+    .swipe-control {
+        display: inline-block;
+    }
+}
