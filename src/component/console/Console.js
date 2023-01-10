@@ -27,15 +27,21 @@ export default class Console extends React.Component {
     }
 
     updateScreen = () => {
+        if (this.state.screen === 'score') {
+            this.setState({score: 0});
+        }
         this.setState({screen: this.nextScreen()});
     }
 
     updateScore = () => {
+        this.setState({score: this.state.score + 256});
+    }
+
+    strobe = () => {
         this.setState({blink: true});
         setTimeout(() => {
             this.setState({blink: false});
         }, 100);
-        this.setState({score: this.state.score + 256});
     }
 
     renderScreen() {
@@ -59,7 +65,8 @@ export default class Console extends React.Component {
         } else if (this.state.screen === 'play') {
             return (
                 <Game
-                    update={this.updateScore}
+                    updateScore={this.updateScore}
+                    strobe={this.strobe}
                     action={this.updateScreen}
                 />
             );

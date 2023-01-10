@@ -1,5 +1,5 @@
 h3 {
-    color: var(--teal-dark);
+    color: var(--primary-dark);
 }
 
 .score {
@@ -10,7 +10,7 @@ h3 {
     height: 100%;
 }
 
-#score-count {
-    color: var(--pink);
-    text-shadow: 0 0 24px var(--teal);
+#score-total {
+    color: var(--secondary);
+    text-shadow: 0 0 24px var(--primary);
 }

@@ -14,17 +14,15 @@ html {
     --grey: #222;
     --grey-light: #333;
 
-    --teal: #1BDFEB;
-    --teal-dark: #0F8187;
+    --primary: #1BDFEB;
+    --primary-dark: #0F8187;
 
-    --pink: #FF87FF;
+    --secondary: #FF87FF;
 
-    --orange: #F78D0C;
+    --food: #F78D0C;
 
     --desktop-width: 85rem;
     --mobile-width: 96vw;
-
-    --dim: 16;
 
     font-family: "Silkscreen", cursive;
     font-size: 1vmin;
@@ -36,7 +34,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    color: var(--teal);
+    color: var(--primary);
     background-color: var(--black-light);
     overflow: hidden;
 }
@@ -60,12 +58,12 @@ p {
 .btn {
     font-size: 4em;
     background-color: transparent;
-    color: var(--teal);
+    color: var(--primary);
     cursor: pointer;
 }
 
 .btn:hover {
-    text-shadow: 0 0 10px var(--teal);
+    text-shadow: 0 0 10px var(--primary);
 }
 
 @media (max-width: 768px) {

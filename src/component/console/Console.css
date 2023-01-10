@@ -10,7 +10,7 @@ main {
 }
 
 .blink {
-    box-shadow: 0 0 24px 4px var(--pink);
+    box-shadow: 0 0 24px 4px var(--secondary);
     transition: none;
 }
 

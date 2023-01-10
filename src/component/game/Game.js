@@ -7,17 +7,25 @@ import "./Game.css";
 export default class Game extends React.Component {
     constructor(props) {
         super(props);
+        this.passScore = props.updateScore;
         this.gameState = new GameState();
-        this.gameState.update = props.update;
+        this.gameState.updateScore = this.updateScore;
+        this.gameState.strobe = props.strobe;
         this.gameState.action = props.action;
         this.state = {
-            grid: this.gameState.next()
+            grid: this.gameState.next(),
+            score: 0,
         };
     }
 
     tick() {
         const next = this.gameState.next();
         this.setState({grid: next});
+    }
+
+    updateScore = () => {
+        this.passScore();
+        this.setState({score: this.state.score + 256});
     }
 
     componentDidMount() {
@@ -42,7 +50,13 @@ export default class Game extends React.Component {
             );
         });
         return (
-            <div id="game">{rows}</div>
+            <div id="game">
+                <h3
+                    id="score-count"
+                    className={this.state.score == 0 ? 'hide' : ''}
+                >{ this.state.score }</h3>
+                {rows}
+            </div>
         );
     }
 }

@@ -8,18 +8,18 @@
     background-color: var(--black);
 }
 
-.teal {
-    background-color: var(--teal);
+.primary {
+    background-color: var(--primary);
 }
 
-.teal-dark {
-    background-color: var(--teal-dark);
+.primary-dark {
+    background-color: var(--primary-dark);
 }
 
-.pink {
-    background-color: var(--pink);
+.secondary {
+    background-color: var(--secondary);
 }
 
 .food {
-    background-color: var(--orange);
+    background-color: var(--food);
 }
